@@ -1,0 +1,44 @@
+.sidebar {
+    width: 120px;
+    padding: 10px;
+    background-color: #ebf5ff;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+  }
+  
+  .tool-list .shape {
+    margin: 10px 0;
+    margin-left: 3px;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #888;
+  }
+  
+  .tool-list .circle {
+    border-radius: 50%;
+  }
+
+  .tool-list .triangle{
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  }
+  
+  .color-picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .color-switch {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
