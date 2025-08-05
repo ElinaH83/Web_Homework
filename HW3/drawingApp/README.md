@@ -12,4 +12,6 @@
 9. DrawingController: این فایل هم عملیات‌های مربوط به نقاشی را انجام می‌دهد که شامل متد POST سیو کردن نقاشی‌ها و متد GET برای گرفتن نقاشی است. متد POST آن برای بخش export فرانت اند و متد GET آن برای import است.
 10. Data: این فایل هم پایگاه داده‌ای از پیش تعیین شده است که 3 کاربر در آن تعریف شده است.
 </div>
+
 برای getter و setter کلاس‌ها از lombok استفاده شده است.
+همچنین از chatgpt برای رفع یک سری مشکلات اضافه شده است. به طور مثال برای چک کردن table My_users از http://localhost:8080/h2-console استفاده شد اما در ابتدا با localhost refused to connect مواجه می‌شدم که با اضافه کردن خط .requestMatchers("/h2-console/**").permitAll() در فایل SecurityConfig و چند خط در فایل application.properties مشکل رفع شد. مشکل بعدی هم استفاده از POSTman برای چک کردن کد بود بود که همش خطای 400 می‌گرفتم که آن هم با تغییر اسم table users و اضافه کردن CORS مشکل حل شد.
